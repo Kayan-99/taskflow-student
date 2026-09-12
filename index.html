@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFlow Student</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>TaskFlow Student</h1>
+        <p>Organize your university tasks easily</p>
+    </header>
+
+    <main class="container">
+
+        <section class="task-input">
+            <input type="text" id="taskInput" placeholder="Enter a new task...">
+            <button onclick="addTask()">Add Task</button>
+        </section>
+
+        <section class="task-list">
+            <h2>My Tasks</h2>
+
+            <ul id="taskList">
+                <li>
+                    <span>Study Software Engineering</span>
+                    <button onclick="deleteTask(this)">Delete</button>
+                </li>
+
+                <li>
+                    <span>Complete GitHub project</span>
+                    <button onclick="deleteTask(this)">Delete</button>
+                </li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>TaskFlow Student © 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
